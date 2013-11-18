@@ -115,4 +115,9 @@
     <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
 
+    <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Estilo bateria</string>
+    <string name="status_bar_battery_style_port">Vertical</string>
+    <string name="status_bar_battery_style_circle">Círculo</string>
+
 </resources>
