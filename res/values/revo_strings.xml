@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="nitrogen_settings_title">Nitrogen Settings</string>
+    <string name="revo_settings_title">Revolution Settings</string>
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
@@ -26,6 +26,11 @@
     <string name="statusbar_title">Status bar</string>
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
+
+    <!-- PrefsCategories -->
+    <string name="statusbar_clock" >Clock</string>
+    <string name="statusbar_battery" >Battery</string>
+    <string name="statusbar_network" >Network</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -104,5 +109,13 @@
 
     <!--Status Bar -->
     <string name="statusbar_items_title">StatusBar Items</string>
+
+    <!-- Battery percentage -->
+    <string name="battery_style_category_title">Battery icon</string>
+    <string name="battery_style_category_summary">Customize the battery icon in statusbar</string>
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
 
 </resources>
