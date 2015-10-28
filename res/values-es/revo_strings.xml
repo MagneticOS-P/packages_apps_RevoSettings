@@ -119,5 +119,6 @@
     <string name="status_bar_battery_style_title">Estilo bateria</string>
     <string name="status_bar_battery_style_port">Vertical</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_text">Texto</string>
 
 </resources>
