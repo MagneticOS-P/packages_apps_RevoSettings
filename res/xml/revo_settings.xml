@@ -18,70 +18,70 @@
     android:title="@string/revo_settings_title" >
 
         <!-- Status Bar -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.revo.settings.fragments.StatusBarSettings" 
             android:icon="@drawable/ic_settings_statusbar"/>
 
+        <!-- Navigation Bar -->
+        <com.revo.settings.preferences.CardviewPreference
+            android:key="navigationbar_category"
+            android:title="@string/navbar_title" 
+            android:fragment="com.revo.settings.fragments.NavbarSettings"
+            android:icon="@drawable/ic_settings_navbar"/>
+
+        <!-- Notifications -->
+        <com.revo.settings.preferences.CardviewPreference
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:fragment="com.revo.settings.fragments.NotificationSettings"
+            android:icon="@drawable/ic_settings_notifications"/>
+
         <!-- Quick Settings panel -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.revo.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
             android:fragment="com.revo.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
-        <!-- Navigation Bar -->
-        <PreferenceScreen
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title" 
-            android:fragment="com.revo.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
-
         <!-- Gestures -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="gestures_category"
             android:title="@string/gestures_title" 
             android:fragment="com.revo.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>
 
         <!-- Lock Screen -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title" 
             android:fragment="com.revo.settings.fragments.LockScreenSettings"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Power Menu -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="powermenu__category"
             android:title="@string/powermenu_title" 
             android:fragment="com.revo.settings.fragments.PowerMenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Recents -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="recents_category"
             android:title="@string/recents_title"
             android:fragment="com.revo.settings.fragments.RecentsSettings"
             android:icon="@drawable/ic_settings_recents"/>
 
-        <!-- Notifications -->
-        <PreferenceScreen
-            android:key="notifications_category"
-            android:title="@string/notifications_title"
-            android:fragment="com.revo.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notifications"/>
-
         <!-- Misc -->
-        <PreferenceScreen
+        <com.revo.settings.preferences.CardviewPreference
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.revo.settings.fragments.MiscSettings"
