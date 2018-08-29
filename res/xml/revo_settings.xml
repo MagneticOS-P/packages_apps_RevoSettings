@@ -80,6 +80,13 @@
             android:fragment="com.revo.settings.fragments.RecentsSettings"
             android:icon="@drawable/ic_settings_recents"/>
 
+        <!-- Style -->
+        <com.revo.settings.preferences.CardviewPreference
+            android:key="style_settings"
+            android:title="@string/style_settings_title"
+            android:icon="@drawable/ic_settings_style"
+            android:fragment="com.revo.settings.fragments.StyleSettings" />
+
         <!-- Misc -->
         <com.revo.settings.preferences.CardviewPreference
             android:key="misc_category"

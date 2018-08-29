@@ -32,4 +32,11 @@
     <string name="cancel">Cancelar</string>
     <string name="save">Guardar</string>
 
+    <!-- Themes strings -->
+    <string name="style_settings_title">Temas</string>
+    <string name="style_settings_summary">Temas y cambios visuales</string>
+    <string name="omni_theme_select_title">Temas</string>
+    <string name="omni_theme_select_none">Desactivado</string>
+    <string name="omni_theme_select_summary">Seleccionar temas instalados</string>
+
 </resources>
