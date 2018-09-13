@@ -359,4 +359,8 @@
     <string name="block_on_secure_keyguard_title">Deshabilitar ajustes rápidos</string>
     <string name="block_on_secure_keyguard_summary">Deshabilitar ajustes rápidos en la pantalla de bloqueo (segura)</string>
 
+    <string name="use_old_mobiletype_title">Usar iconos red oreo</string>
+    <string name="use_old_mobiletype_summary">Fusionar cobertura y tipo de red</string>
+
+
 </resources>
