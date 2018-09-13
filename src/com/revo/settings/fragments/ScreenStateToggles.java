@@ -30,6 +30,7 @@ import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
 import android.view.View;
+import android.provider.Settings.Secure;
 import android.content.Intent;
 import android.util.Log;
 import android.net.ConnectivityManager;

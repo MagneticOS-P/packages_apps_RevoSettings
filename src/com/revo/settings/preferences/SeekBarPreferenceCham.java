@@ -1,4 +1,4 @@
-package com.havoc.settings.preferences;
+package com.revo.settings.preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
