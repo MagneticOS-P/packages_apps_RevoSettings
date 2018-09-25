@@ -57,7 +57,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.;
+        return MetricsProto.MetricsEvent.REVO_SETTINGS;
     }
 
 }
