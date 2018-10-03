@@ -85,7 +85,18 @@
     <string name="network_traffic_hidearrow">Ocultar flechas</string>
     <string name="network_traffic_hidearrow_summary">Ocultar las flechas de la velocidad de red</string>
 
+
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Deslizar para captura de pantalla</string>
     <string name="three_finger_gesture_summary">Deslizar 3 dedos para hacer captura de pantalla</string>
+
+    <!-- Power Menu -->
+    <string name="advanced_power_menu">Opciones menú apagado</string>
+    <string name="arrow_reboot_menu">Menú reinicio avanzado</string>
+    <string name="powermenu_reboot_title">Reiniciar</string>
+    <string name="powermenu_airplane_title">Modo avión</string>
+    <string name="powermenu_advanced_reboot_title">Reinicio avanzado</string>
+    <string name="powermenu_advanced_reboot_summary">Activa el menú de reinicio avanzado, recovery, bootloader, reiniciar interfaz usuario o un reinicio rápido</string>
+    <string name="powermenu_screenshot_title">Captura de pantalla</string>
+
 </resources>
