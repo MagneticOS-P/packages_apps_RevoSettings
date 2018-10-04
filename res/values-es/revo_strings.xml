@@ -282,4 +282,15 @@
     <string name="stock_statusbar_in_hide">Tamaño bara de estado por defecto</string>
     <string name="stock_statusbar_in_hide_summary">Usar el tamaño por defecto para la barra de estado al ocultar</string>
 
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Notificaciones emergentes activadas</string>
+    <string name="summary_heads_up_disabled">Notificaciones emergentes desactivadas</string>
+    <string name="add_heads_up_package">Añadir app</string>
+    <string name="add_heads_up_stoplist_summary">Desactivar notificaciones emergentes para estas apps</string>
+    <string name="heads_up_stoplist_title">Lista apps</string>
+    <string name="profile_choose_app">Seleccionar app</string>
+    <string name="dialog_delete_title">Borrar</string>
+    <string name="dialog_delete_message">Borrar el ítem seleccionado?</string>
+
 </resources>

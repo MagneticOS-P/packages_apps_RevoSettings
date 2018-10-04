@@ -18,6 +18,12 @@
 	android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <!-- Heads up -->
+        <Preference
+            android:key="heads_up_notifications"
+            android:title="@string/heads_up_notifications"
+            android:fragment="com.revo.settings.fragments.HeadsUpSettings" />
+
         <com.revo.settings.preferences.SystemSettingSwitchPreference 
             android:key="force_expanded_notifications" 
             android:title="@string/force_expanded_notifications_title" 
