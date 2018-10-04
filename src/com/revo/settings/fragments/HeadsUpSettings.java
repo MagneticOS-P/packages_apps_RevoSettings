@@ -277,6 +277,8 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         final String value = TextUtils.join("|", settings);
         if (preferencesUpdated) {
                 mStoplistPackageList = value;
+            } else {
+                mBlacklistPackageList = value;
             }
         Settings.System.putString(getContentResolver(),
                 Settings.System.HEADS_UP_STOPLIST_VALUES, value);
