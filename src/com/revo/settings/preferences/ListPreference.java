@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.havoc.settings.preferences;
+package com.revo.settings.preferences;
 
 import android.content.Context;
 import android.text.TextUtils;

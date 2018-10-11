@@ -67,8 +67,8 @@ import com.android.settings.SettingsPreferenceFragment;
         ContentResolver resolver = getActivity().getContentResolver();
          mEnableScreenStateToggles = (SwitchPreference) findPreference(
                 SCREEN_STATE_TOGGLES_ENABLE);
-         int enabled = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.START_SCREEN_STATE_SERVICE, 0, UserHandle.USER_CURRENT);
+         int enabled = Settings.System.getIntForUser(resolver,
+                Settings.System.START_SCREEN_STATE_SERVICE, 0, UserHandle.USER_CURRENT);
          mEnableScreenStateToggles.setChecked(enabled != 0);
         mEnableScreenStateToggles.setOnPreferenceChangeListener(this);
          mSecondsOffDelay = (SystemSettingSeekBarPreference) findPreference(SCREEN_STATE_OFF_DELAY);
@@ -130,10 +130,10 @@ import com.android.settings.SettingsPreferenceFragment;
         ContentResolver resolver = getActivity().getContentResolver();
          if (preference == mEnableScreenStateToggles) {
             boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver,
-                    Settings.Secure.START_SCREEN_STATE_SERVICE, value ? 1 : 0, UserHandle.USER_CURRENT);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.START_SCREEN_STATE_SERVICE, value ? 1 : 0, UserHandle.USER_CURRENT);
              Intent service = (new Intent())
-                .setClassName("com.android.systemui", "com.android.systemui.havoc.screenstate.ScreenStateService");
+                .setClassName("com.android.systemui", "com.android.systemui.revo.screenstate.ScreenStateService");
             if (value) {
                 getActivity().stopService(service);
                 getActivity().startService(service);
@@ -179,8 +179,8 @@ import com.android.settings.SettingsPreferenceFragment;
     }
      public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.START_SCREEN_STATE_SERVICE, 0, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.START_SCREEN_STATE_SERVICE, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.SCREEN_STATE_OFF_DELAY, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
