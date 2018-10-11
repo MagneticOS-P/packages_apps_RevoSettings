@@ -47,4 +47,22 @@
     <!--Status Bar -->
     <string name="statusbar_items_title">Elementos barra de estado</string>
 
+    <!-- Screen state service -->
+    <string name="screen_state_toggles_title">Acciones en reposo</string>
+    <string name="screen_state_toggles_summary">Acciones que se ejecutan al apagar la pantalla</string>
+    <string name="screen_state_toggles_enable_title">Activar</string>
+    <string name="screen_state_toggles_enable_summary">Las acciones se ejecutaran al apagar la pantalla, al volver a encenderla se restauran los valores</string>
+    <string name="screen_state_toggles_mobile_title">Redes móviles</string>
+    <string name="screen_state_toggles_location_title">Localización</string>
+    <string name="screen_state_toggles_twog">Cambiar a 2G</string>
+    <string name="screen_state_toggles_twog_summary">La red móvil cambiará a 2G al apagar la pantalla</string>
+    <string name="screen_state_toggles_gps">Desactivar GPS</string>
+    <string name="screen_state_toggles_gps_summary">Los servicios de localización basados en GPS se desactivaran al apagar la pantalla</string>
+    <string name="screen_state_toggles_mobile_data">Desactivar datos móviles</string>
+    <string name="screen_state_toggles_mobile_data_summary">Los datos móviles se desactivaran al apagar la pantalla</string>
+    <string name="screen_state_off_delay_title">Tiempo de espera al apagar la pantalla</string>
+    <string name="screen_state_off_delay_summary">Segundos antes de ejecutar las accicones al apagar la pantalla</string>
+    <string name="screen_state_on_delay_title">Tiempo de espera al encender la pantalla</string>
+    <string name="screen_state_on_delay_summary">Segundos antes de ejecutar las acciones al encender la pantalla</string>
+
 </resources>
