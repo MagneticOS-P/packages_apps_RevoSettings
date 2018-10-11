@@ -44,4 +44,7 @@
     <string name="navigation_keys">Barra de navegación</string>
     <string name="navigation_keys_summary">Mostrar barra de navegació</string>
 
+    <!--Status Bar -->
+    <string name="statusbar_items_title">Elementos barra de estado</string>
+
 </resources>
