@@ -99,4 +99,7 @@
     <string name="powermenu_advanced_reboot_summary">Activa el menú de reinicio avanzado, recovery, bootloader, reiniciar interfaz usuario o un reinicio rápido</string>
     <string name="powermenu_screenshot_title">Captura de pantalla</string>
 
+    <!--Status Bar -->
+    <string name="statusbar_items_title">Elementos barra de estado</string>
+
 </resources>
