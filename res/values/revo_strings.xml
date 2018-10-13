@@ -69,4 +69,8 @@
     <string name="screen_state_on_delay_title">Screen On actions delay</string>
     <string name="screen_state_on_delay_summary">Number of seconds to wait before performing actions after screen on</string>
 
+    <!-- Double Tap Lockscreen to Sleep -->
+    <string name="double_tap_to_sleep_lockscreen_title">Double tap Lockscreen</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Double tap lock screen to put the device to sleep</string>
+
 </resources>
