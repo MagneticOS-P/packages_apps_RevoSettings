@@ -140,4 +140,8 @@
     <string name="screen_state_on_delay_title">Tiempo de espera al encender la pantalla</string>
     <string name="screen_state_on_delay_summary">Segundos antes de ejecutar las acciones al encender la pantalla</string>
 
+    <!-- Double Tap Lockscreen to Sleep -->
+    <string name="double_tap_to_sleep_lockscreen_title">Doble toque en la pantalla de bloqueo</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Doble toque en la pantalla de bloqueo para poner el dispositivo en reposo</string>
+
 </resources>
