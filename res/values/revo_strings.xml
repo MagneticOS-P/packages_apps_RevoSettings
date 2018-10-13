@@ -156,4 +156,11 @@
     <string name="double_tap_to_sleep_statusbar_title">Statusbar</string>
     <string name="double_tap_to_sleep_statusbar_summary">Double tap on statusbar to put the device to sleep</string>
 
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS panel tweaks</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
 </resources>

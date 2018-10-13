@@ -148,4 +148,11 @@
     <string name="double_tap_to_sleep_statusbar_title">Doble toque barra de estado</string>
     <string name="double_tap_to_sleep_statusbar_summary">Doble toque en la barra de estado para poner el dispositivo en reposo</string>
 
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">Filas y columnas ajustes rápidos</string>
+    <string name="qs_rows_portrait_title">Número de filas en vertical</string>
+    <string name="qs_rows_landscape_title">Número de filas en horizontal</string>
+    <string name="qs_columns_portrait_title">Número de columnas en vertical</string>
+    <string name="qs_columns_landscape_title">Número de columnas en horizontal</string>
+
 </resources>
