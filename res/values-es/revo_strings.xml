@@ -144,4 +144,8 @@
     <string name="double_tap_to_sleep_lockscreen_title">Doble toque en la pantalla de bloqueo</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Doble toque en la pantalla de bloqueo para poner el dispositivo en reposo</string>
 
+    <!-- Double Tap Statusbar to Sleep -->
+    <string name="double_tap_to_sleep_statusbar_title">Doble toque barra de estado</string>
+    <string name="double_tap_to_sleep_statusbar_summary">Doble toque en la barra de estado para poner el dispositivo en reposo</string>
+
 </resources>

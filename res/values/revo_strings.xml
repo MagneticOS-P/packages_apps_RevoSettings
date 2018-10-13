@@ -126,6 +126,9 @@
     <string name="status_bar_battery_style_hidden">Hidden</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
 
+    <!-- Double Tap Lockscreen to Sleep -->
+    <string name="double_tap_to_sleep_lockscreen_title">Double tap Lockscreen</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Double tap lock screen to put the device to sleep</string>
 
     <!-- Screen state service -->
     <string name="screen_state_toggles_title">Suspend actions</string>
@@ -148,5 +151,9 @@
     <!-- Double Tap Lockscreen to Sleep -->
     <string name="double_tap_to_sleep_lockscreen_title">Double tap Lockscreen</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Double tap lock screen to put the device to sleep</string>
+
+    <!-- Double Tap Statusbar to Sleep -->
+    <string name="double_tap_to_sleep_statusbar_title">Statusbar</string>
+    <string name="double_tap_to_sleep_statusbar_summary">Double tap on statusbar to put the device to sleep</string>
 
 </resources>
