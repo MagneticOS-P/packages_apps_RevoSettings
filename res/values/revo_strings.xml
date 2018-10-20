@@ -43,6 +43,9 @@
     <string name="custom_wall_browse_title">Wallpapers</string>
     <string name="custom_wall_browse_summary">Browse and select Omni wallpapers</string>
 
-
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar options</string>
+    <string name="navigation_keys">Navigation bar</string>
+    <string name="navigation_keys_summary">Show navigation bar</string>
 
 </resources>

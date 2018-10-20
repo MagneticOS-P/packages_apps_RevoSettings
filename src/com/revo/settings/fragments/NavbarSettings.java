@@ -18,6 +18,7 @@ package com.revo.settings.fragments;
 
 import java.util.ArrayList;
 
+import android.content.ContentResolver;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -36,13 +37,40 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
+import com.android.internal.util.custom.NavbarUtils;
 
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+
+    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
+    private SwitchPreference mEnableNavBar;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.revo_settings_navigation);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        ContentResolver resolver = getContentResolver();
+
+        mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
+
+        boolean showNavBarDefault = NavbarUtils.hasNavbarByDefault(getActivity());
+
+        boolean showNavBar = Settings.System.getInt(resolver,
+                Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1 : 0) == 1;
+        mEnableNavBar.setChecked(showNavBar);
+
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mEnableNavBar) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
 
     }
 
