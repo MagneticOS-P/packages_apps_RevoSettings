@@ -82,8 +82,10 @@
     <string name="show_network_traffic_all">Subida y bajada</string>
     <string name="network_traffic_state_title">Mostrar velocidad de red en la barra de estado</string>
     <string name="network_traffic_autohide_threshold_title">Ocultar si el tráfico de red es inferior a (KB/s)</string>
-
     <string name="network_traffic_hidearrow">Ocultar flechas</string>
     <string name="network_traffic_hidearrow_summary">Ocultar las flechas de la velocidad de red</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Deslizar para captura de pantalla</string>
+    <string name="three_finger_gesture_summary">Deslizar 3 dedos para hacer captura de pantalla</string>
 </resources>
