@@ -72,4 +72,15 @@
     <string name="clock_date_format">Formato fecha</string>
     <string name="clock_date_string_edittext_title">Debe estar en formato fecha ej. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Entrar formato</string>
+
+	<!-- Network traffic -->
+    <string name="traffic_title">Indicadores de red</string>
+    <string name="network_traffic_title">Velocidad de red</string>
+    <string name="network_traffic_type">Seleccionar el estilo de los indicadores</string>
+    <string name="show_network_traffic_up">Subida</string>
+    <string name="show_network_traffic_down">Bajada</string>
+    <string name="show_network_traffic_all">Subida y bajada</string>
+    <string name="network_traffic_state_title">Mostrar velocidad de red en la barra de estado</string>
+    <string name="network_traffic_autohide_threshold_title">Ocultar si el tráfico de red es inferior a (KB/s)</string>
+
 </resources>

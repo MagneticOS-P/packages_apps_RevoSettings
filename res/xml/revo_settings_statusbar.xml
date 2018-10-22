@@ -24,4 +24,9 @@
         android:summary="@string/status_bar_clock_summary"
         android:fragment="com.revo.settings.fragments.ClockDateSettings" />
 
+    <Preference
+        android:title="@string/traffic_title"
+        android:key="traffic"
+        android:fragment="com.revo.settings.fragments.NetworkTraffic" />
+
 </PreferenceScreen>
