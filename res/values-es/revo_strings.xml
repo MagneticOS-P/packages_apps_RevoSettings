@@ -83,4 +83,7 @@
     <string name="network_traffic_state_title">Mostrar velocidad de red en la barra de estado</string>
     <string name="network_traffic_autohide_threshold_title">Ocultar si el tráfico de red es inferior a (KB/s)</string>
 
+    <string name="network_traffic_hidearrow">Ocultar flechas</string>
+    <string name="network_traffic_hidearrow_summary">Ocultar las flechas de la velocidad de red</string>
+
 </resources>

@@ -29,6 +29,13 @@
         android:dependency="network_traffic_state"
         android:persistent="false" />
 
+    <com.revo.settings.preferences.SystemSettingSwitchPreference
+        android:key="network_traffic_hidearrow"
+        android:title="@string/network_traffic_hidearrow"
+        android:summary="@string/network_traffic_hidearrow_summary"
+        android:dependency="network_traffic_state"
+        android:defaultValue="true" />
+
     <com.revo.settings.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
