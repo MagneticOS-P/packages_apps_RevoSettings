@@ -161,4 +161,7 @@
     <string name="qs_brightness_position_bottom_title">Barra de brillo inferior</string>
     <string name="qs_brightness_position_bottom_summary">Mostrar la barra de brillo en la parte inferior</string>
 
+    <string name="face_auto_unlock_title">Auto desbloqueo facial</string>
+    <string name="face_auto_unlock_summary">Desbloquear automáticamente al reconocer un rostro guardado</string>
+
 </resources>
