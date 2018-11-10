@@ -178,4 +178,8 @@
     <string name="edge_gestures_back_show_ui_feedback_summary">Mostrar animación al usar el gesto atrás</string>
     <string name="edge_gestures_desc">Deslizar desde abajo para Home, mantener para recientes. Deslizar desde la parte inferior derecha o izquierda para atrás.</string>
 
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Forzar notificaciones expandidas</string>
+    <string name="force_expanded_notifications_summary">Forzar a las apps que lo soporten las notificaciones expandidas</string>
+
 </resources>

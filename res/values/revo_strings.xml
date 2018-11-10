@@ -182,4 +182,8 @@
     <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
     <string name="edge_gestures_desc">Swipe from bottom to trigger Home gesture, keep it pressed to open recents. Swipe from bottom left or bottom right to go back.</string>
 
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force expanded notifications</string>
+    <string name="force_expanded_notifications_summary">Force apps that support expanded notifications</string>
+
 </resources>
