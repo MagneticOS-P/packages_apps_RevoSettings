@@ -186,4 +186,8 @@
     <string name="volte_icon_title">Icono VoLTE</string>
     <string name="volte_icon_summary">Mostrar icono VoLTE en la barra de estado</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibración huella</string>
+    <string name="fprint_sucess_vib_summary">Vibrar al desbloquear el dispositivo mediante la huella dactilar</string>
+
 </resources>
