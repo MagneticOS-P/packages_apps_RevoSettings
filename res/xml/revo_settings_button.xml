@@ -18,10 +18,16 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
+    <!--<PreferenceScreen
         android:key="volume_key"
         android:fragment="com.revo.settings.fragments.VolumeRockerSettings"
-        android:title="@string/volume_title" />
+        android:title="@string/volume_title" />-->
+
+    <com.revo.settings.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title"
+        android:defaultValue="false" />
 
     <com.revo.settings.preferences.SystemSettingSwitchPreference
         android:key="torch_long_press_power_gesture"

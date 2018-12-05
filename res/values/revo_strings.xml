@@ -105,4 +105,8 @@
     <string name="torch_long_press_power_timeout_5min">5 minutes</string>
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
 
+    <!-- Volume Wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
 </resources>
