@@ -190,4 +190,8 @@
     <string name="fprint_sucess_vib_title">Vibración huella</string>
     <string name="fprint_sucess_vib_summary">Vibrar al desbloquear el dispositivo mediante la huella dactilar</string>
 
+    <!-- Volume Wake -->
+    <string name="volume_rocker_wake_title">Despertar con teclas volumen</string>
+    <string name="volume_rocker_wake_summary">Pulsar las teclas de volumen despertará el dispositivo</string>
+
 </resources>
