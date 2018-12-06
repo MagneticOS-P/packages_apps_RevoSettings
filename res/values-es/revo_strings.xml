@@ -105,4 +105,8 @@
     <string name="volume_rocker_wake_title">Despertar con teclas volumen</string>
     <string name="volume_rocker_wake_summary">Pulsar las teclas de volumen despertará el dispositivo</string>
 
+    <!-- Volume Button Music Control -->
+    <string name="volume_rocker_music_controls_title">Control música</string>
+    <string name="volume_rocker_music_controls_summary">Pulsación larga en los botones de volumen con la pantalla apagada para pasar canciones</string>
+
 </resources>
