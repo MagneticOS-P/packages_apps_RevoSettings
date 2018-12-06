@@ -217,4 +217,9 @@
     <string name="qstile_attemptmountain">An attempt of a mountain</string>
     <string name="qstile_squaremedo">The Squaremedo</string>
 
+	<!-- Screenshot -->
+    <string name="screenshot_type_title">Screenshot type</string>
+    <string name="screenshot_type_fullscreen">Full screenshots</string>
+    <string name="screenshot_type_partial">Partial screenshot</string>
+
 </resources>
