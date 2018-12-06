@@ -23,6 +23,13 @@
         android:fragment="com.revo.settings.fragments.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>
 
+    <ListPreference
+         android:key="qs_tile_style"
+         android:title="@string/qs_tile_style_title"
+         android:persistent="false"
+         android:entries="@array/qs_selector_entries"
+         android:entryValues="@array/qs_selector_values" />
+
     <com.revo.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_show_brightness_title"

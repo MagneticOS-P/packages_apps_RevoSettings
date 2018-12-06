@@ -27,6 +27,8 @@ import java.util.ArrayList;
 public class QuickSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String QS_TILE_STYLE = "qs_tile_style";
+    private ListPreference mQsTileStyle;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -37,12 +39,27 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
+       mQsTileStyle = (ListPreference) findPreference(QS_TILE_STYLE);
+       int qsTileStyle = Settings.System.getIntForUser(resolver,
+               Settings.System.QS_TILE_STYLE, 0,
+	       UserHandle.USER_CURRENT);
+       int valueIndex = mQsTileStyle.findIndexOfValue(String.valueOf(qsTileStyle));
+       mQsTileStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+       mQsTileStyle.setSummary(mQsTileStyle.getEntry());
+       mQsTileStyle.setOnPreferenceChangeListener(this);
+
         }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-        return false;
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mQsTileStyle) {
+            int qsTileStyleValue = Integer.valueOf((String) newValue);
+            Settings.System.putIntForUser(resolver, Settings.System.QS_TILE_STYLE,
+                    qsTileStyleValue, UserHandle.USER_CURRENT);
+            mQsTileStyle.setSummary(mQsTileStyle.getEntries()[qsTileStyleValue]);
+        }
+        return true;
     }
 
     @Override

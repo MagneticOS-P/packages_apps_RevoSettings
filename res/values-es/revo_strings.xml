@@ -198,4 +198,19 @@
     <string name="volume_rocker_music_controls_title">Control música</string>
     <string name="volume_rocker_music_controls_summary">Pulsación larga en los botones de volumen con la pantalla apagada para pasar canciones</string>
 
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Tema ajustes rápidos</string>
+    <string name="qstile_default">Por defecto</string>
+    <string name="qstile_circle_trim">Círculo con recorte</string>
+    <string name="qstile_dual_tone_circle">Círculo de tono dual (recorte)</string>
+    <string name="qstile_squircle_trim">Cuadrado con recorte</string>
+    <string name="qstile_circle_gradient">Círculo con degradado</string>
+    <string name="qstile_wavey">Ola</string>
+    <string name="qstile_circle_dualtone">Círculo de tono dual</string>
+    <string name="qstile_pokesign">Pokesign</string>
+    <string name="qstile_ninja">Ninja</string>
+    <string name="qstile_dottedcircle">Círculo perforado</string>
+    <string name="qstile_attemptmountain">Montaña</string>
+    <string name="qstile_squaremedo">Squaremedo</string>
+
 </resources>
