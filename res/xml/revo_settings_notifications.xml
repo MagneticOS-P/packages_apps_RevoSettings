@@ -24,6 +24,13 @@
             android:title="@string/heads_up_notifications"
             android:fragment="com.revo.settings.fragments.HeadsUpSettings" />
 
+        <!-- less boring headsup -->
+        <com.revo.settings.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="true" />
+
         <com.revo.settings.preferences.SystemSettingSwitchPreference 
             android:key="force_expanded_notifications" 
             android:title="@string/force_expanded_notifications_title" 

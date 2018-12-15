@@ -38,8 +38,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.superior.settings.preferences.PackageListAdapter;
-import com.superior.settings.preferences.PackageListAdapter.PackageItem;
+import com.revo.settings.preferences.PackageListAdapter;
+import com.revo.settings.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -86,7 +86,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.REVO_SETTINGS;
     }
 
     @Override

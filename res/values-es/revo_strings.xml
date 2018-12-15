@@ -293,4 +293,8 @@
     <string name="dialog_delete_title">Borrar</string>
     <string name="dialog_delete_message">Borrar el ítem seleccionado?</string>
 
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Heads up menos molestos</string>
+    <string name="less_boring_heads_up_summary">Mosrtar notificaciones emergentes solo para llamadas y mensajes</string>
+
 </resources>
