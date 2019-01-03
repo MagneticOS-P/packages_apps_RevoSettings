@@ -59,5 +59,4 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.REVO_SETTINGS;
     }
-
 }

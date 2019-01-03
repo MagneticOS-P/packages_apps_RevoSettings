@@ -26,6 +26,7 @@
     <string name="statusbar_title">Status bar</string>
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
+    <string name="cutout_main">Display cutout</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -86,5 +87,13 @@
 
     <string name="use_old_mobiletype_title">Use old mobile type style</string>
     <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
+
+    <!-- Display cutout options -->
+    <string name="display_cutout_style_title">Cutout style</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Immerse</string>
+    <string name="display_cutout_style_hide">Hide</string>
+    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
+    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
 
 </resources>

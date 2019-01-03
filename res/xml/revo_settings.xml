@@ -87,6 +87,13 @@
             android:icon="@drawable/ic_settings_style"
             android:fragment="com.revo.settings.fragments.StyleSettings" />
 
+        <!-- Cutout modes -->
+        <com.revo.settings.preferences.CardviewPreference
+            android:key="cutout_settings"
+            android:title="@string/cutout_main"
+            android:fragment="com.revo.settings.fragments.CutoutFragment"
+            android:icon="@drawable/ic_cutout" />
+
         <!-- Misc -->
         <com.revo.settings.preferences.CardviewPreference
             android:key="misc_category"
