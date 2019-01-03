@@ -26,6 +26,7 @@
     <string name="statusbar_title">Status bar</string>
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
+    <string name="cutout_main">Display cutout</string>
 
     <!-- PrefsCategories -->
     <string name="statusbar_clock" >Clock</string>
@@ -278,5 +279,13 @@
     <string name="recents_stock">Stock</string>
     <string name="recents_grid">Grid</string>
     <string name="recents_go">Android Go</string>
+
+    <!-- Display cutout options -->
+    <string name="display_cutout_style_title">Cutout style</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Immerse</string>
+    <string name="display_cutout_style_hide">Hide</string>
+    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
+    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
 
 </resources>

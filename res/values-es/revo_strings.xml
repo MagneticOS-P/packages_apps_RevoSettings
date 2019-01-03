@@ -26,6 +26,7 @@
     <string name="statusbar_title">Barra de estado</string>
     <string name="volume_title">Botones de volumen</string>
     <string name="notifications_title">Notificaciones</string>
+    <string name="cutout_main">Recorte Pantalla</string>
 
     <!-- PrefsCategories -->
     <string name="statusbar_clock" >Reloj</string>
@@ -272,5 +273,13 @@
     <string name="recents_stock">Stock</string>
     <string name="recents_grid">Parrilla</string>
     <string name="recents_go">Android Go</string>
+
+    <!-- Display cutout options -->
+    <string name="display_cutout_style_title">Diseño recorte</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Inmersivo</string>
+    <string name="display_cutout_style_hide">Ocultar</string>
+    <string name="stock_statusbar_in_hide">Tamaño bara de estado por defecto</string>
+    <string name="stock_statusbar_in_hide_summary">Usar el tamaño por defecto para la barra de estado al ocultar</string>
 
 </resources>

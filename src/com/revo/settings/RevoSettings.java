@@ -22,20 +22,33 @@ import com.android.internal.logging.nano.MetricsProto;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Surface;
-import android.preference.Preference;
+
 import com.android.settings.R;
+
+import android.support.v7.preference.Preference;
 
 import com.android.settings.SettingsPreferenceFragment;
 
 public class RevoSettings extends SettingsPreferenceFragment {
+
+    private static final String PREF_KEY_CUTOUT = "cutout_settings";
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.revo_settings);
+        Preference mCutoutPref = (Preference) findPreference(PREF_KEY_CUTOUT);
+        if (!hasPhysicalDisplayCutout(getContext()))
+            getPreferenceScreen().removePreference(mCutoutPref);
+    }
+
+    private static boolean hasPhysicalDisplayCutout(Context context) {
+        return context.getResources().getBoolean(
+                com.android.internal.R.bool.config_physicalDisplayCutout);
     }
 
     @Override
