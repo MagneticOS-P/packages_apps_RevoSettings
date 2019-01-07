@@ -227,4 +227,12 @@
     <string name="audio_panel_view_voice_title">Voz</string>
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
 
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Botón brillo adaptativo</string>
+    <string name="brightness_icon_summary">Mostrar el botón de brillo adaptativo</string>
+
+    <!-- Quick Settings brightness side buttons -->
+    <string name="brightness_side_buttons_title">Botones de control de brillo</string>
+    <string name="brightness_side_buttons_summary">Mostrar botones para ajustar el brillo</string>
+
 </resources>
