@@ -235,4 +235,8 @@
     <string name="brightness_side_buttons_title">Botones de control de brillo</string>
     <string name="brightness_side_buttons_summary">Mostrar botones para ajustar el brillo</string>
 
+    <!-- StatusBar Brightness control -->
+    <string name="status_bar_toggle_brightness">Control del brillo</string>
+    <string name="status_bar_toggle_brightness_summary">Ajustar el birllo de la pantalla deslizando por la barra de estado</string>
+
 </resources>
