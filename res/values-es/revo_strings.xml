@@ -240,6 +240,18 @@
     <string name="status_bar_toggle_brightness_summary">Ajustar el birllo de la pantalla deslizando por la barra de estado</string>
 
     <!-- AOSP Recents component Style -->
+    <string name="oreo_recents_category">Recientes Oreo</string>
     <string name="recents_component_type_title">Estilo apps recientes</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Botón borrar todo</string>
+    <string name="show_clear_all_recents_button_summary">Mostrar botón borrar todo</string>
+    <string name="recents_clear_all_location_title">Posición botón</string>
+    <string name="recents_clear_all_location_top_right">Superior derecha</string>
+    <string name="recents_clear_all_location_top_left">Superior izquierda</string>
+    <string name="recents_clear_all_location_top_center">Superior centrado</string>
+    <string name="recents_clear_all_location_bottom_right">Infreior derecha</string>
+    <string name="recents_clear_all_location_bottom_left">Inferior izquierda</string>
+    <string name="recents_clear_all_location_bottom_center">Inferior centrado</string>
 
 </resources>
