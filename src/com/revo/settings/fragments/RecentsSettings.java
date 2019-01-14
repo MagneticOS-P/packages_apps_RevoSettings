@@ -10,6 +10,7 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
@@ -101,7 +102,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.RECENTS_LAYOUT_STYLE, style, UserHandle.USER_CURRENT);
             mRecentsType.setSummary(mRecentsType.getEntries()[index]);
-            AEXUtils.showSystemUiRestartDialog(getContext());
+            RevoUtils.showSystemUiRestartDialog(getContext());
         return true;
         }
     return false;

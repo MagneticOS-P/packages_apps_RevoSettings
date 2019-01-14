@@ -63,10 +63,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mTorchLongPressPowerTimeout.setSummary(mTorchLongPressPowerTimeout.getEntry());
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mTorchLongPressPowerTimeout) {
-            String TorchTimeout = (String) newValue;
+            String TorchTimeout = (String) objValue;
             int TorchTimeoutValue = Integer.parseInt(TorchTimeout);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.TORCH_LONG_PRESS_POWER_TIMEOUT, TorchTimeoutValue);
