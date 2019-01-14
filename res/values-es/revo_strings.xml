@@ -92,4 +92,13 @@
     <string name="stock_statusbar_in_hide">Tamaño bara de estado por defecto</string>
     <string name="stock_statusbar_in_hide_summary">Usar el tamaño por defecto para la barra de estado al ocultar</string>
 
+    <string name="torch_long_press_power_gesture_title">Linterna con botón encendido</string>
+    <string name="torch_long_press_power_gesture_desc">Pulsación larga botón encendido con la patanlla apagada para activar la linterna</string>
+    <string name="torch_long_press_power_timeout_title">Apagar linterna de forma automática</string>
+    <string name="torch_long_press_power_timeout_never">Nunca</string>
+    <string name="torch_long_press_power_timeout_1min">1 minuto</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutos</string>
+
 </resources>
