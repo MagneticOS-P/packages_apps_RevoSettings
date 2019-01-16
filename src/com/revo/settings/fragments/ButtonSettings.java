@@ -41,8 +41,12 @@ import com.android.internal.logging.nano.MetricsProto;
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener{
 
+    private static final String KEY_TORCH_LONG_PRESS_POWER_GESTURE =
+            "torch_long_press_power_gesture";
     private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT =
             "torch_long_press_power_timeout";
+
+    private SwitchPreference mTorchLongPressPowerGesture;
 
     private ListPreference mTorchLongPressPowerTimeout;
 
@@ -52,6 +56,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.revo_settings_button);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // Long press power while display is off to activate torchlight
+        mTorchLongPressPowerGesture =
+                (SwitchPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_GESTURE);
 
         mTorchLongPressPowerTimeout =
                     (ListPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
