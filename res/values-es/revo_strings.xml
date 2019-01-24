@@ -326,4 +326,23 @@
     <string name="heads_up_snooze_15min">15 minutos</string>
     <string name="heads_up_snooze_20min">20 minutos</string>
 
+    <!-- Status bar custom header -->
+    <string name="status_bar_custom_header_title">Activar</string>
+    <string name="daylight_header_pack_title">Colección imágenes cabecera</string>
+    <string name="status_bar_custom_header_shadow_title">Sombra</string>
+    <string name="status_bar_custom_header_shadow_summary">Para mejorar la visibilidad en imágenes muy claras</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Imagen estática</string>
+    <string name="daylight_header_provider_title">Colección de imágenes</string>
+    <string name="custom_header_provider_title">Proveedor</string>
+    <string name="custom_header_pick_title">Seleccionar imagen de cabecera</string>
+    <string name="custom_header_pick_summary">Seleccinar una imagen local o remota</string>
+    <string name="style_enabled_summary">La imagen personalizada está activada</string>
+    <string name="style_disabled_summary">La imagen personalizada está desactivada</string>
+    <string name="header_provider_disabled">Inactivo</string>
+    <string name="custom_header_title">Imagen de cabecera personalizada</string>
+    <string name="file_header_select_title">Seleccionar imagen local</string>
+    <string name="file_header_select_summary">Seleccionar imagen desde el almacenamiento</string>
+    <string name="file_header_provider_title">Una sola imagen</string>
+
 </resources>
