@@ -283,11 +283,14 @@
     <string name="stock_statusbar_in_hide_summary">Usar el tamaño por defecto para la barra de estado al ocultar</string>
 
     <!-- Heads up -->
-    <string name="heads_up_notifications">Heads up</string>
+    <string name="heads_up_category">Notificaciones emergentes</string>
+    <string name="heads_up_notifications">Notificaciones emergentes</string>
     <string name="summary_heads_up_enabled">Notificaciones emergentes activadas</string>
     <string name="summary_heads_up_disabled">Notificaciones emergentes desactivadas</string>
     <string name="add_heads_up_package">Añadir app</string>
+    <string name="heads_up_blacklist_title">Lista Negra</string>
     <string name="add_heads_up_stoplist_summary">Desactivar notificaciones emergentes para estas apps</string>
+    <string name="add_heads_up_blacklist_summary">Desactivar notificaciones emergentes de estas apps</string>
     <string name="heads_up_stoplist_title">Lista apps</string>
     <string name="profile_choose_app">Seleccionar app</string>
     <string name="dialog_delete_title">Borrar</string>
@@ -295,7 +298,7 @@
 
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Heads up menos molestos</string>
-    <string name="less_boring_heads_up_summary">Mosrtar notificaciones emergentes solo para llamadas y mensajes</string>
+    <string name="less_boring_heads_up_summary">Mostrar notificaciones emergentes solo para llamadas y mensajes</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Tiempo de espera</string>

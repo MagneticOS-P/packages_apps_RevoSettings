@@ -100,7 +100,8 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         } catch (Exception e) {
             return;
         }
-         int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+
+        int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
                     "com.android.systemui:integer/heads_up_notification_decay", null, null));
         mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
         mHeadsUpTimeOut.setOnPreferenceChangeListener(this);
@@ -118,7 +119,8 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnooze));
         updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
     }
-     @Override
+
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mHeadsUpTimeOut) {
             int headsUpTimeOut = Integer.valueOf((String) newValue);
@@ -137,7 +139,8 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         }
         return false;
     }
-     private void updateHeadsUpTimeOutSummary(int value) {
+
+    private void updateHeadsUpTimeOutSummary(int value) {
         String summary = getResources().getString(R.string.heads_up_time_out_summary,
                 value / 1000);
         mHeadsUpTimeOut.setSummary(summary);
@@ -154,7 +157,6 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         }
     }
 
-
     @Override
     public void onResume() {
         super.onResume();
@@ -168,7 +170,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
-        if (dialogId == DIALOG_STOPLIST_APPS) {
+        if (dialogId == DIALOG_STOPLIST_APPS || dialogId == DIALOG_BLACKLIST_APPS ) {
             return MetricsProto.MetricsEvent.REVO_SETTINGS;
         }
         return 0;
@@ -184,9 +186,9 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         final ListView list = new ListView(getActivity());
         list.setAdapter(mPackageAdapter);
 
-                builder.setTitle(R.string.profile_choose_app);
-                builder.setView(list);
-                dialog = builder.create();
+        builder.setTitle(R.string.profile_choose_app);
+        builder.setView(list);
+        dialog = builder.create();
 
         switch (id) {
             case DIALOG_STOPLIST_APPS:
@@ -292,7 +294,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         } else if (preference == mAddBlacklistPref) {
             showDialog(DIALOG_BLACKLIST_APPS);
         } else {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.dialog_delete_title)
                     .setMessage(R.string.dialog_delete_message)
                     .setIconAttribute(android.R.attr.alertDialogIcon)
@@ -366,13 +368,16 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
             parseAndAddToMap(blacklistString, mBlacklistPackages);
             parsed = true;
         }
+
         return parsed;
     }
-     private void parseAndAddToMap(String baseString, Map<String,Package> map) {
+
+    private void parseAndAddToMap(String baseString, Map<String,Package> map) {
         if (baseString == null) {
             return;
         }
-         final String[] array = TextUtils.split(baseString, "\\|");
+
+        final String[] array = TextUtils.split(baseString, "\\|");
         for (String item : array) {
             if (TextUtils.isEmpty(item)) {
                 continue;
@@ -381,6 +386,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
             map.put(pkg.name, pkg);
         }
     }
+
 
     private void savePackageList(boolean preferencesUpdated, Map<String,Package> map) {
         String setting = map == mStoplistPackages
@@ -398,6 +404,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
             } else {
                 mBlacklistPackageList = value;
             }
+        }
         Settings.System.putString(getContentResolver(),
                 setting, value);
     }
