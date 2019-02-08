@@ -78,6 +78,11 @@
     <string name="clock_date_format">Formato fecha</string>
     <string name="clock_date_string_edittext_title">Debe estar en formato fecha ej. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Entrar formato</string>
+    <string name="status_bar_clock_font_style_title">Estilo fuente</string>
+    <string name="status_bar_clock_font_size_title">Tamaño fuente</string>
+    <string name="clock_date_right">A la derecha de la hora</string>
+    <string name="clock_date_left">A la izquierda de la hora</string>
+    <string name="clock_date_position">Posición fecha</string>
 
 	<!-- Network traffic -->
     <string name="traffic_title">Indicadores de red</string>
