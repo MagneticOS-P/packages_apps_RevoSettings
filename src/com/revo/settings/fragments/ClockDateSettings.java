@@ -57,7 +57,6 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_CLOCK_DATE_DISPLAY = "clock_date_display";
     private static final String STATUS_BAR_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String STATUS_BAR_CLOCK_DATE_FORMAT = "clock_date_format";
-    private static final String STATUS_BAR_CLOCK_COLOR = "status_bar_clock_color";
     private static final String STATUS_BAR_CLOCK_SIZE  = "status_bar_clock_size";
     private static final String STATUS_BAR_CLOCK_FONT_STYLE  = "status_bar_clock_font_style";
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
