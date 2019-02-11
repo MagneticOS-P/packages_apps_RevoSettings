@@ -347,6 +347,6 @@
 
     <!-- Hide the power menu on the lockscreen -->
     <string name="powermenu_lockscreen_title">Visibilidad en pantalla de bloqueo</string>
-    <string name="powermenu_lockscreen_summary">Activar la posibilidad de ver el menú de apagado en la pantalla de blqoueo</string>
+    <string name="powermenu_lockscreen_summary">Activar el menú de apagado en la pantalla de blqoueo</string>
 
 </resources>
