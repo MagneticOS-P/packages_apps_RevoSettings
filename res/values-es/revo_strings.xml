@@ -349,4 +349,10 @@
     <string name="powermenu_lockscreen_title">Visibilidad en pantalla de bloqueo</string>
     <string name="powermenu_lockscreen_summary">Activar el menú de apagado en la pantalla de blqoueo</string>
 
+    <!-- Clock auto hide -->
+    <string name="status_bar_clock_auto_hide_title">Auto-ocultar</string>
+    <string name="status_bar_clock_auto_hide_summary">Mostrar/ocultar el reloj en la barra de estado en intérvalos</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Duración ocultar</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Duración mostrar</string>
+
 </resources>
