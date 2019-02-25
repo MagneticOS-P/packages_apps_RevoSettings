@@ -355,4 +355,8 @@
     <string name="status_bar_clock_auto_hide_hdur_title">Duración ocultar</string>
     <string name="status_bar_clock_auto_hide_sdur_title">Duración mostrar</string>
 
+    <!-- Disable OS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Deshabilitar ajustes rápidos</string>
+    <string name="block_on_secure_keyguard_summary">Deshabilitar ajustes rápidos en la pantalla de bloqueo (segura)</string>
+
 </resources>

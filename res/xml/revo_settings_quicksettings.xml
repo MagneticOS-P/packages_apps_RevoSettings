@@ -23,6 +23,12 @@
         android:fragment="com.revo.settings.fragments.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>
 
+    <com.revo.settings.preferences.SecureSettingSwitchPreference
+         android:key="status_bar_locked_on_secure_keyguard"
+         android:title="@string/block_on_secure_keyguard_title"
+         android:summary="@string/block_on_secure_keyguard_summary"
+         android:defaultValue="false"/>
+
     <ListPreference
          android:key="qs_tile_style"
          android:title="@string/qs_tile_style_title"
