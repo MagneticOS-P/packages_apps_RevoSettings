@@ -99,13 +99,13 @@ public class StyleSettings extends SettingsPreferenceFragment implements
         mDaylightHeaderPack.setEntryValues(values.toArray(new String[values.size()]));
 
         boolean headerEnabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER, 0) != 0;
+                Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) != 0;
         updateHeaderProviderSummary(headerEnabled);
         mDaylightHeaderPack.setOnPreferenceChangeListener(this);
 
         mHeaderShadow = (SystemSettingSeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
         final int headerShadow = Settings.System.getInt(getContentResolver(),
-                Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
         mHeaderShadow.setValue((int)(((double) headerShadow / 255) * 100));
         mHeaderShadow.setOnPreferenceChangeListener(this);
 
@@ -119,7 +119,7 @@ public class StyleSettings extends SettingsPreferenceFragment implements
         mDaylightHeaderPack.setSummary(getResources().getString(R.string.header_provider_disabled));
         if (headerEnabled) {
             String settingHeaderPackage = Settings.System.getString(getContentResolver(),
-                    Settings.System.OMNI_STATUS_BAR_DAYLIGHT_HEADER_PACK);
+                    Settings.System.STATUS_BAR_DAYLIGHT_HEADER_PACK);
             if (settingHeaderPackage != null) {
                 int valueIndex = mDaylightHeaderPack.findIndexOfValue(settingHeaderPackage);
                 mDaylightHeaderPack.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
@@ -144,18 +144,18 @@ public class StyleSettings extends SettingsPreferenceFragment implements
         if (preference == mDaylightHeaderPack) {
             String value = (String) newValue;
             Settings.System.putString(getContentResolver(),
-                    Settings.System.OMNI_STATUS_BAR_DAYLIGHT_HEADER_PACK, value);
+                    Settings.System.STATUS_BAR_DAYLIGHT_HEADER_PACK, value);
             int valueIndex = mDaylightHeaderPack.findIndexOfValue(value);
             mDaylightHeaderPack.setSummary(mDaylightHeaderPack.getEntries()[valueIndex]);
         } else if (preference == mHeaderShadow) {
             Integer headerShadow = (Integer) newValue;
             int realHeaderValue = (int) (((double) headerShadow / 100) * 255);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
         } else if (preference == mHeaderProvider) {
             String value = (String) newValue;
             Settings.System.putString(getContentResolver(),
-                    Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_PROVIDER, value);
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER_PROVIDER, value);
             int valueIndex = mHeaderProvider.findIndexOfValue(value);
             mHeaderProvider.setSummary(mHeaderProvider.getEntries()[valueIndex]);
             updateEnablement();
@@ -214,14 +214,14 @@ public class StyleSettings extends SettingsPreferenceFragment implements
                 return;
             }
             final Uri imageUri = result.getData();
-            Settings.System.putString(getContentResolver(), Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_PROVIDER, "file");
-            Settings.System.putString(getContentResolver(), Settings.System.OMNI_STATUS_BAR_FILE_HEADER_IMAGE, imageUri.toString());
+            Settings.System.putString(getContentResolver(), Settings.System.STATUS_BAR_CUSTOM_HEADER_PROVIDER, "file");
+            Settings.System.putString(getContentResolver(), Settings.System.STATUS_BAR_FILE_HEADER_IMAGE, imageUri.toString());
         }
     }
 
     private void updateEnablement() {
         String providerName = Settings.System.getString(getContentResolver(),
-                Settings.System.OMNI_STATUS_BAR_CUSTOM_HEADER_PROVIDER);
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_PROVIDER);
         if (providerName == null) {
             providerName = mDaylightHeaderProvider;
         }
